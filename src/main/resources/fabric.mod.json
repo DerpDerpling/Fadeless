@@ -1,17 +1,18 @@
 {
   "schemaVersion": 1,
-  "id": "nofade",
+  "id": "fadeless",
   "version": "${version}",
 
-  "name": "No Fade",
+  "name": "Fadeless",
   "description": "Remove fade out animations",
   "authors": [
-    "UltimateBoomer"
+    "UltimateBoomer",
+    "DerpDerpling"
   ],
   "contact": {
-    "homepage": "https://www.curseforge.com/minecraft/mc-mods/no-fade",
-    "sources": "https://github.com/UltimateBoomer/mc-no-fade",
-    "issues": "https://github.com/UltimateBoomer/mc-no-fade/issues"
+    "homepage": "https://www.curseforge.com/minecraft/mc-mods/fadeless",
+    "sources": "https://github.com/DerpDerpling/Fadeless",
+    "issues": "https://github.com/DerpDerpling/Fadeless/issues"
   },
 
   "license": "MIT",
@@ -30,6 +31,6 @@
   "depends": {
     "fabricloader": ">=0.7.4",
     "fabric": "*",
-    "minecraft": "*"
+    "minecraft": ">1.19.4"
   }
 }
