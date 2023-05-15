@@ -1,4 +1,4 @@
-## **Fadeless**
+# **Fadeless**
 
 **This is a forked version of [No Fade](https://github.com/UltimateBoomer/mc-no-fade) for 1.20 and up.**
 
