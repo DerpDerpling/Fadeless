@@ -1,0 +1,13 @@
+{
+  "required": true,
+  "package": "derp.fadeless.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "minVersion": "0.7.11",
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "client": [
+    "LoadingOverlayMixin",
+    "TitleScreenMixin"
+  ]
+}

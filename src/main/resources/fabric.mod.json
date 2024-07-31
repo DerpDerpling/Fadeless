@@ -1,34 +1,33 @@
 {
   "schemaVersion": 1,
-  "id": "fadeless",
-  "version": "${version}",
-
-  "name": "Fadeless",
-  "description": "Remove fade out animations",
-  "authors": [
-    "UltimateBoomer",
-    "DerpDerpling"
-  ],
-  "contact": {
-    "homepage": "https://www.curseforge.com/minecraft/mc-mods/fadeless",
-    "sources": "https://github.com/DerpDerpling/Fadeless",
-    "issues": "https://github.com/DerpDerpling/Fadeless/issues"
-  },
-
-  "license": "MIT",
-  "icon": "assets/nofade/icon.png",
-
+  "id": "$mod_id",
+  "name": "$mod_display_name",
+  "version": "$mod_version",
   "environment": "client",
+  "description": "$mod_description",
+  "icon": "icon.png",
+  "contact": {
+    "homepage": "$homepage_url",
+    "sources": "$sources_url",
+    "issues": "$issue_tracker_url"
+  },
+  "authors": ["${String.join('\u0022,\u0022',authors)}"],
+  "contributors": [
+    "${String.join('\u0022,\u0022',contributors)}"
+  ],
   "entrypoints": {
     "main": [
-      "io.github.ultimateboomer.nofade.NoFade"
+      "derp.fadeless.Fadeless::onInitialize"
     ]
   },
-  "mixins": [
-    "nofade.mixins.json"
-  ],
-
   "depends": {
-    "minecraft": ">=1.20-"
-  }
+    "fabricloader": ">=$fabricloader",
+    "minecraft": "$minecraft"
+  },
+  "accessWidener": "fadeless.accesswidener",
+  "license": "$license",
+  "mixins": [
+    "fadeless.mixins.json"
+  ],
+  "custom": {}
 }
