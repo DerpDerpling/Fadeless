@@ -2,19 +2,22 @@ package derp.fadeless.mixin;
 
 import net.minecraft.client.gui.screens.TitleScreen;
 import org.spongepowered.asm.mixin.Mixin;
-import org.spongepowered.asm.mixin.Mutable;
-import org.spongepowered.asm.mixin.Shadow;
-import org.spongepowered.asm.mixin.injection.At;
-import org.spongepowered.asm.mixin.injection.Inject;
-import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
+import org.spongepowered.asm.mixin.Unique;
+import org.spongepowered.asm.mixin.injection.Constant;
+import org.spongepowered.asm.mixin.injection.ModifyConstant;
 
 @Mixin(TitleScreen.class)
 public class TitleScreenMixin {
-    @Shadow
-    @Mutable private boolean fading;
+    @ModifyConstant(
+            method = "render", constant = @Constant(floatValue = 2000.0F, ordinal = 0), require = 0
+    )
+    public float removeFade(float instance) {
+        return animationSpeed() * 2;
+    }
 
-    @Inject(method = "<init>(Z)V", at = @At("RETURN"))
-    private void onInit(boolean doBackgroundFade, CallbackInfo ci) {
-        this.fading = false;
+    @Unique
+    private float animationSpeed() {
+        return 0;
     }
 }
+
