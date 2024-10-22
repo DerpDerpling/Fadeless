@@ -9,10 +9,10 @@ Are you annoyed with the long transition animation when you load into Minecraft?
 - Removes more fading animations!
 - A config that lets you toggle fades.
 
-![Fadeless Enabled](https://raw.githubusercontent.com/DerpDerpling/fadeless/assets/fadeless_enabled.webp)
+![Fadeless Enabled](https://raw.githubusercontent.com/DerpDerpling/Fadeless/refs/heads/1.21/assets/fadeless_disabled.webp)
 > With Fadeless
 
-![Fadeless Disabled](https://raw.githubusercontent.com/DerpDerpling/fadeless/assets/fadeless_disabled.webp)
+![Fadeless Disabled](https://raw.githubusercontent.com/DerpDerpling/Fadeless/refs/heads/1.21/assets/fadeless_enabled.webp)
 > Without Fadeless
 ## This is a fork of [no fade](https://github.com/UltimateBoomer/mc-no-fade). The author has [given me permission](https://raw.githubusercontent.com/DerpDerpling/i.derpy.xyz/main/img/proof.png) to reupload/maintain this. All credit goes to [UltimateBoomer.](https://github.com/UltimateBoomer)
 
