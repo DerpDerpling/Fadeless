@@ -1,31 +1,30 @@
 {
   "schemaVersion": 1,
-  "id": "$mod_id",
-  "name": "$mod_display_name",
-  "version": "$mod_version",
+  "id": "fadeless",
+  "name": "Fadeless",
+  "version": "2.0.0",
   "environment": "client",
-  "description": "$mod_description",
+  "description": "Removes fade out animations!",
   "icon": "icon.png",
   "contact": {
-    "homepage": "$homepage_url",
-    "sources": "$sources_url",
-    "issues": "$issue_tracker_url"
+    "homepage": "https://github.com/DerpDerpling/Fadeless",
+    "sources": "https://github.com/DerpDerpling/Fadeless",
+    "issues": "https://github.com/DerpDerpling/Fadeless/issues"
   },
-  "authors": ["${String.join('\u0022,\u0022',authors)}"],
-  "contributors": [
-    "${String.join('\u0022,\u0022',contributors)}"
-  ],
+  "authors": ["DerpDerpling, UltimateBoomer (Original Author)"],
   "entrypoints": {
     "main": [
       "derp.fadeless.Fadeless::onInitialize"
+    ],
+    "modmenu": [
+      "derp.fadeless.config.ModMenuInit"
     ]
   },
   "depends": {
-    "fabricloader": ">=$fabricloader",
-    "minecraft": "$minecraft"
+    "minecraft": ">=1.21-"
   },
   "accessWidener": "fadeless.accesswidener",
-  "license": "$license",
+  "license": "MIT",
   "mixins": [
     "fadeless.mixins.json"
   ],

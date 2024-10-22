@@ -1,5 +1,6 @@
 package derp.fadeless.mixin;
 
+import derp.fadeless.config.FadelessConfig;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.client.gui.screens.LoadingOverlay;
@@ -20,7 +21,7 @@ public abstract class LoadingOverlayMixin extends Overlay {
 
     @Inject(method = "render", at = @At("HEAD"))
     private void onRender(GuiGraphics guiGraphics, int mouseX, int mouseY, float partialTick, CallbackInfo ci) {
-        if (this.fadeOutStart > 1) {
+        if (this.fadeOutStart > 1 && FadelessConfig.overlayFade.equals(FadelessConfig.OverlayFade.DISABLED)) {
             this.minecraft.setOverlay(null);
         }
     }

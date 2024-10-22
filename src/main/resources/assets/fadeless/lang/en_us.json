@@ -1,0 +1,24 @@
+{
+    "fadeless.midnightconfig.title": "Fadeless Config",
+    "fadeless.midnightconfig.subtitleFade.tooltip": "Toggles the subtle fade on the Subtitle text. \n\n§lDefault §a§lEnabled",
+    "fadeless.midnightconfig.subtitleFade": "Subtitle Fade",
+    "fadeless.midnightconfig.enum.SubtitleFade.DISABLED": "§cDisabled",
+    "fadeless.midnightconfig.enum.SubtitleFade.ENABLED": "§aEnabled",
+
+    "fadeless.midnightconfig.chatFade": "Chat Fade",
+    "fadeless.midnightconfig.chatFade.tooltip": "Toggles the fade out of the chat box. \n\n§lDefault §a§lEnabled",
+    "fadeless.midnightconfig.enum.ChatFade.DISABLED": "§cDisabled",
+    "fadeless.midnightconfig.enum.ChatFade.ENABLED": "§aEnabled",
+
+    "fadeless.midnightconfig.titlescreenFade": "Title Screen Fade",
+    "fadeless.midnightconfig.titlescreenFade.tooltip": "Toggle Title Screen Fade entirely. \n\n§lDefault §c§lDisabled",
+    "fadeless.midnightconfig.titlescreenfadetime": "Title Screen Fade time",
+    "fadeless.midnightconfig.titlescreenfadetime.tooltip": "This controls how long it takes for the title screen to fade in. \n\n§lDefault 0.0 §r§o(this option only works if Title Screen Fade is §a§oEnabled§r§o)",
+    "fadeless.midnightconfig.enum.TitleScreenFadeEnabled.DISABLED": "§cDisabled",
+    "fadeless.midnightconfig.enum.TitleScreenFadeEnabled.ENABLED": "§aEnabled",
+
+    "fadeless.midnightconfig.overlayFade": "Loading Overlay Fade",
+    "fadeless.midnightconfig.overlayFade.tooltip": "Toggle the Mojang loading overlay fade. \n\n§lDefault §c§lDisabled",
+    "fadeless.midnightconfig.enum.OverlayFade.DISABLED": "§cDisabled",
+    "fadeless.midnightconfig.enum.OverlayFade.ENABLED": "§aEnabled"
+}
