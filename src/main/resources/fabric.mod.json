@@ -21,7 +21,8 @@
     ]
   },
   "depends": {
-    "minecraft": ">=1.21-"
+    "minecraft": ">=1.21-",
+    "fabric-api": "*"
   },
   "accessWidener": "fadeless.accesswidener",
   "license": "MIT",
