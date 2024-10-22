@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "fadeless",
   "name": "Fadeless",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "environment": "client",
   "description": "Removes fade out animations!",
   "icon": "icon.png",
