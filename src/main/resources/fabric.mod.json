@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "fadeless",
   "name": "Fadeless",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "environment": "client",
   "description": "Removes fade out animations!",
   "icon": "icon.png",
@@ -21,7 +21,7 @@
     ]
   },
   "depends": {
-    "minecraft": ">=1.21-",
+    "minecraft": ">=1.21.4-",
     "fabric-api": "*"
   },
   "accessWidener": "fadeless.accesswidener",
