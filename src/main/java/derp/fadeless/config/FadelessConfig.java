@@ -23,6 +23,8 @@ public class FadelessConfig extends MidnightConfig {
     }
     @Entry(category = TEXT) public static ChatFade chatFade = ChatFade.ENABLED;
     public enum ChatFade {
-        ENABLED, DISABLED
+        ENABLED, DISABLED, PERMANENT;
     }
+    @Entry(category = TEXT, isSlider = true, min = 0, max = 10000)
+    public static int customChatFadeTime = 200;
 }
