@@ -8,19 +8,19 @@ import org.spongepowered.asm.mixin.injection.Redirect;
 @Mixin(AccessibilityOnboardingScreen.class)
 public abstract class AccessibilityOnboardingScreenMixin {
 
-    @Redirect(method = "render", at = @At(value = "INVOKE", target = "Lnet/minecraft/Util;getMillis()J", ordinal = 0))
+    @Redirect(method = "render", at = @At(value = "INVOKE", target = "Lnet/minecraft/util/Util;getMillis()J", ordinal = 0))
     private long fakeFadeInStart() {
         return 0L;
     }
 
 
-    @Redirect(method = "render", at = @At(value = "INVOKE", target = "Lnet/minecraft/Util;getMillis()J", ordinal = 1))
+    @Redirect(method = "render", at = @At(value = "INVOKE", target = "Lnet/minecraft/util/Util;getMillis()J", ordinal = 1))
     private long fakeFadeInProgress() {
         return 0L;
     }
 
 
-    @Redirect(method = "render", at = @At(value = "INVOKE", target = "Lnet/minecraft/Util;getMillis()J", ordinal = 2))
+    @Redirect(method = "render", at = @At(value = "INVOKE", target = "Lnet/minecraft/util/Util;getMillis()J", ordinal = 2))
     private long fakeFadeOutTime() {
         return Long.MAX_VALUE;
     }

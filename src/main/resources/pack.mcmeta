@@ -1,7 +1,8 @@
 {
   "pack": {
-    "pack_format": 4,
-    "supported_formats": {"min_inclusive": -999999, "max_inclusive": 999999},
+    "pack_format": 65,
+    "min_format": 65,
+    "max_format": 99999,
     "description": "Mod resources."
   }
 }
