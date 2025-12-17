@@ -18,8 +18,15 @@ public abstract class ChatComponentMixin {
     @Shadow @Final
     Minecraft minecraft;
 
+    @Shadow
+    public abstract boolean isChatFocused();
+
     @ModifyVariable(method = "forEachLine", at = @At("STORE"), ordinal = 0)
     private float modifyChatFade(float original, @Local GuiMessage.Line line) {
+        if (this.isChatFocused()) {
+            return original;
+        }
+
         int maxTicks = Math.max(1, FadelessConfig.customChatFadeTime);
         int nowTicks = this.minecraft.gui.getGuiTicks();
         int ticksElapsed = nowTicks - line.addedTime();
