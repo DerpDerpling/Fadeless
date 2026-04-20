@@ -14,7 +14,7 @@ import static derp.fadeless.config.FadelessConfig.titlescreenfadetime;
 public class TitleScreenMixin {
 
     @ModifyConstant(
-            method = "render", constant = @Constant(floatValue = 2000.0F, ordinal = 0), require = 0
+            method = "extractRenderState", constant = @Constant(floatValue = 2000.0F, ordinal = 0), require = 0
     )
     public float removeFade(float instance) {
         if (FadelessConfig.titlescreenFade.equals(FadelessConfig.TitleScreenFadeEnabled.DISABLED)) return animationSpeed() * 2;

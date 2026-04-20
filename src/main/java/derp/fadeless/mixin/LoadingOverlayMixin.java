@@ -4,7 +4,8 @@ import derp.fadeless.config.FadelessConfig;
 import derp.fadeless.config.FadelessConfig.OverlayFade;
 
 import net.minecraft.client.Minecraft;
-import net.minecraft.client.gui.GuiGraphics;
+
+import net.minecraft.client.gui.GuiGraphicsExtractor;
 import net.minecraft.client.gui.screens.LoadingOverlay;
 import net.minecraft.client.gui.screens.Overlay;
 import net.minecraft.util.Util;
@@ -22,8 +23,8 @@ public abstract class LoadingOverlayMixin extends Overlay {
     @Shadow private boolean fadeIn;
     @Shadow private long fadeInStart;
 
-    @Inject(method = "render", at = @At("HEAD"))
-    private void onRender(GuiGraphics guiGraphics, int mouseX, int mouseY, float partialTick, CallbackInfo ci) {
+    @Inject(method = "extractRenderState", at = @At("HEAD"))
+    private void onRender(GuiGraphicsExtractor graphics, int mouseX, int mouseY, float a, CallbackInfo ci) {
         if (FadelessConfig.overlayFade == OverlayFade.DISABLED) {
             if (this.fadeIn && this.fadeInStart == -1L) {
                 long now = Util.getMillis();

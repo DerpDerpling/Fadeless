@@ -1,9 +1,9 @@
 package derp.fadeless.mixin;
 
 import derp.fadeless.config.FadelessConfig;
-import net.minecraft.client.GuiMessage;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.components.ChatComponent;
+import net.minecraft.client.multiplayer.chat.GuiMessage.*;
 import net.minecraft.util.Mth;
 import org.spongepowered.asm.mixin.Final;
 import org.spongepowered.asm.mixin.Mixin;
@@ -21,8 +21,8 @@ public abstract class ChatComponentMixin {
     @Shadow
     public abstract boolean isChatFocused();
 
-    @ModifyVariable(method = "forEachLine", at = @At("STORE"), ordinal = 0)
-    private float modifyChatFade(float original, @Local GuiMessage.Line line) {
+    @ModifyVariable(method = "forEachLine", at = @At("STORE"), name = "alpha")
+    private float modifyChatFade(float original, @Local(name = "message") Line line) {
         if (this.isChatFocused()) {
             return original;
         }

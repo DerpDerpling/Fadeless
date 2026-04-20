@@ -10,7 +10,7 @@ import org.spongepowered.asm.mixin.injection.Redirect;
 @Mixin(SubtitleOverlay.class)
 public class SubtitleOverlayMixin {
     @Redirect(
-            method = "render(Lnet/minecraft/client/gui/GuiGraphics;)V",
+            method = "extractRenderState",
             at = @At(value = "INVOKE", target = "Lnet/minecraft/util/Mth;clampedLerp(FFF)F")
     )
     private float removeFadeOut(float start, float end, float delta) {
