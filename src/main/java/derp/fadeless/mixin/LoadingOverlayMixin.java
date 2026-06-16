@@ -32,7 +32,7 @@ public abstract class LoadingOverlayMixin extends Overlay {
             }
         }
         if (this.fadeOutStart > 1L && FadelessConfig.overlayFade == OverlayFade.DISABLED) {
-            this.minecraft.setOverlay(null);
+            this.minecraft.gui.setOverlay(null);
         }
     }
 }

@@ -18,7 +18,7 @@
     ]
   },
   "depends": {
-    "minecraft": ">=26.1",
+    "minecraft": ">=26.2",
     "fabric-api": "*"
   },
   "accessWidener": "fadeless.accesswidener",

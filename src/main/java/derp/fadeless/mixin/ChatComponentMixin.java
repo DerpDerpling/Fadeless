@@ -28,7 +28,7 @@ public abstract class ChatComponentMixin {
         }
 
         int maxTicks = Math.max(1, FadelessConfig.customChatFadeTime);
-        int nowTicks = this.minecraft.gui.getGuiTicks();
+        int nowTicks = this.minecraft.gui.hud.getGuiTicks();
         int ticksElapsed = nowTicks - line.addedTime();
 
         return switch (FadelessConfig.chatFade) {
