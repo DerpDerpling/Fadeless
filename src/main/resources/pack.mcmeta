@@ -1,8 +1,8 @@
 {
   "pack": {
-    "pack_format": 65,
-    "min_format": 65,
-    "max_format": 99999,
+    "pack_format": [97, 1],
+    "min_format": [97, 1],
+    "max_format": [97, 1],
     "description": "Mod resources."
   }
 }
